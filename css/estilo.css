@@ -1,0 +1,113 @@
+body {
+    background-color: #d3d3d3; /* Plomo claro */
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #2f4f4f; /* Esmeralda oscuro */
+    color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 400px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #fff;
+}
+
+input[type="text"],
+input[type="number"],
+select,
+textarea {
+    width: calc(100% - 12px);
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button[type="submit"] {
+    background-color: #4CAF50; /* Un verde más claro para el botón Registrar */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    display: block; /* Hace que el botón ocupe todo el ancho disponible */
+    margin-left: auto; /* Empuja el margen izquierdo */
+    margin-right: auto; /* Empuja el margen derecho */
+    text-align: center; /* Centra el texto dentro del botón */
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Estilos para el contenedor del género */
+.genero-container {
+    background-color: rgba(255, 255, 255, 0.348); /* Blanco más transparente (alpha = 0.5) */
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+.genero-container label {
+    color: #333; /* Cambia el color del label dentro del contenedor blanco */
+    font-weight: bold;
+    display: block; /* Asegura que la etiqueta esté encima de las opciones */
+    margin-bottom: 5px;
+}
+
+/* Estilos para alinear el radio button al lado del texto */
+.genero-opciones {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente los elementos hijos */
+}
+
+.genero-opciones div {
+    display: flex; /* Alinea el input y la label en la misma línea */
+    align-items: center; /* Alinea verticalmente el input y la label */
+    margin-right: 15px;
+}
+
+.genero-opciones div:last-child {
+    margin-right: 0;
+}
+
+.genero-opciones label {
+    margin-left: 5px;
+    font-weight: normal;
+    color: #333; /* Cambia el color del texto de las opciones */
+}
+
+.genero-opciones input[type="radio"] {
+    vertical-align: middle; /* Alinea verticalmente el radio button al medio del texto */
+    margin-right: 5px; /* Añade un pequeño espacio entre el radio button y el texto */
+}
